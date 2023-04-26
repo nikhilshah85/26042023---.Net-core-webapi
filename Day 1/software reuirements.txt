@@ -1,0 +1,7 @@
+Software Requirements
+
+1. .net core - 6.0 or above 
+2. Visual Studio 2019 or above
+3. SQL Server with SSMS
+------------
+make sure u have them installed on ur machine / else use cloud lab

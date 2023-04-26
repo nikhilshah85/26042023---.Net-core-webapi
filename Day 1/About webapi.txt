@@ -1,0 +1,77 @@
+			What is WebAPI and where is it Used >
+
+
+1. This is all about data exchange
+2. In todays world, organizations has lot and lot of data
+	They need to share this data with 
+		other teams
+		other organizations
+		other applications
+		etc...
+
+Refer to MS Paint Diagram
+
+3. We had WebServices for the same - since 2003 - this was very very useful and many application were created 	using the same 
+	-- it used SOAP based packets (XML) to exchange data
+	-- which is very heavy in terms of size, speed and storage - not suitable in todays mobile data world
+	-- It had a lot of features missing, which was resolved in Advance Web Services (WCF)
+	-- Still not enough
+
+4. we now have more light weight data, which can travel faster
+	JSON - Javascript object notation 
+
+	new standards for more proficient way of exchangeing the data
+	REST - Representation State Transfer
+
+	Thus based on Rest standards, Microsoft created compilers,namespaces,  classes, methods, attributes etc
+	and added it to .Net Core version 
+	This component is called webAPI 
+
+
+5. Who is a WebAPI Developer, what do they know ???
+	They know how to create WebAPI application 
+		useing collections
+		useing EF core with database (could be anything based on project)
+		---
+		Consume webapi application 
+			useing Cient side
+			useing Server side
+		---
+		Dependency Injection
+		Services
+		Middle ware of .Net core
+		---
+		Testing API functionality 
+			PostMan
+			Fiddler
+			Extentions on browser
+			Swagger (inbuilt with .net core)
+		--
+		Security
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
