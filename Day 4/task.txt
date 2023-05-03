@@ -1,0 +1,26 @@
+
+	Task: Need to be submitted to Trainer 
+
+		Crete an Web api appliction for the below reuirement
+	Bankingapi
+		we need to have accounts - with below properties
+		accNo
+		accName
+		accType (Savings, Current, PF)
+		accBalance
+		accIsActive
+
+
+		We will allow users to 
+		View All the account
+		View All the accounts by accType (they pass either Savings, Current or pf)
+		View An Account by accNo (pass the accno and get the details)
+		View All the accounts by status (active or inaactive)
+
+
+		Add a new account
+		Edit an existing account
+		Delete an existing
+
+		**Hanldle all the excepetions properly
+		

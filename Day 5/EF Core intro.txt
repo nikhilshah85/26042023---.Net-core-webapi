@@ -1,0 +1,22 @@
+
+
+Today : Create a webapi application with CRUD operations on SQL Server
+		useing Entity Framework Core
+
+		Entity Framework is the name of - framework by Microsoft, part of .Net core
+		based on open source design pattern - ORM 
+			object relational mapping
+
+
+		it will map all the objects from backend to frontend and wise-versa
+
+		--Database will be mapped to a file in application - DBContext file
+		--Table will be mapped to a file in application - (POCO class)
+		--columns of table - mapped to properties in a POCO class
+		--Constraints - relations will be mapped in a POCO class
+		--Stored Procedure will be mapped to a function in application 
+
+	---------------------------There are 2 approaches supported in .net with EF
+
+1. Database first approach - here u create database and tables first and application will be useing EF core to    generate POCO classes (Plain C# Object - POCO)
+2. Code First approach - here u write POCO classes in application and database and tables will be created by framework on server		

@@ -1,0 +1,135 @@
+Step 1: Create database  and add table with sample data
+	create database employeeDB
+
+use employeeDB
+
+create table employeeInfo
+(
+	empNo int primary key,
+	empName varchar(20),
+	empDesignation varchar(20),
+	empSalary int,
+	empIsPermenant bit
+)
+
+insert into employeeInfo values(101,'Nikhil','Consultant',9000,1)
+insert into employeeInfo values(102,'Kriti','HR',19000,1)
+insert into employeeInfo values(103,'Sakshi','Consultant',1200,0)
+insert into employeeInfo values(104,'Mohan','Sales',29000,1)
+insert into employeeInfo values(105,'Rohan','Consultant',5500,0)
+
+2. Create a new WebAPI application - employeeAPI
+
+3. This is a blank appliacation, does not know anything about EF, thus we will have to add below nuget packages
+	
+	solution explorer -> right click - manage nuget package --> Browse -->
+
+		Microsoft.EntityFrameworkCore.Tools
+		Microsoft.EntityFrameworkCore.Design
+		Microsoft.EntityFrameworkCore
+		Microsoft.EntityFrameworkCore.SqlServer
+
+4. Generate POCO classes using EF Core
+	Tools --> Nuget package Manager --> package manager console
+
+	fire a command for scaffolding
+
+
+	windows Authentication
+	Scaffold-DbContext "server=(localdb)\MSSQLLocalDB; database=employeeDB; integrated security=true;Trust 	Server Certificate=True"
+	-OutputDir Models\EF -Provider Microsoft.EntityFrameworkCore.SqlServer
+
+	server Authentication
+	Scaffold-DbContext "server=(localdb)\MSSQLLocalDB; database=employeeDB;user id= ;password"
+	-OutputDir Models\EF -Provider Microsoft.EntityFrameworkCore.SqlServer
+
+5. Check Models folder in solution explorer - u will get POCO files - 1 file for database and 1 file for 	everytable
+
+6. create a controller based on your poco classes useing EF
+	controller folder - right click - add controller - api - api controller with actions useing EF
+
+7. in the controller file, newly generated, it uses dependency injection by default, we will remove that and learn DI later, thus instanstatiate new object of DBContext call
+
+	line 16:
+	private readonly EmployeeDbContext _context = new EmployeeDbContext();
+
+	remove / comment constructor code
+	//public employeeController(EmployeeDbContext context)
+        //{
+        //    _context = context;
+        //}
+
+8. thats all, build and run the application 
+
+	This completes the EF core implementation and we now have an API with CRUD operations and SQL Server
+
+	try all the methods : insert, update, delete and get
+	All the best
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
