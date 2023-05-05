@@ -1,0 +1,80 @@
+As a webapi developer u as 
+
+
+--Developer of WebAPI
+--Consume of WebAPI 
+
+--------------------------------------------------------------------------------------------------
+		We have Project where you will work as both - Developer and Consumer
+		Development : ASP.Net Core WebAPI
+		Consumtion : ASP.Net Core MVC app 		
+			     Windows forms app
+			     Angular (Small example)
+--------------------------------------------------------------------------------------------------
+	Phase 1 : shoppingAPP (a strong middle ware)
+		--WebAPI Core(Middleware)
+		--Swagger (for testing api)
+		--SQL Server (Backend)
+		--EFCore Framework (Driver for DB Communication and CRUD operations)
+		--DataAnnotations (for data validation, data formats, data calculation) - works very closely 				with Constraints on a table
+		-- Patterns - DI - dependency injecction
+		--(later state) - Repository Pattern
+	
+		create a database - shoppingAPIDB
+			productsList (pId, pName, pCategory, pPrice, pIsInStock)
+				json object should look like
+				{productId:,product:, category:, offerPrice:, isavailable:}
+
+			ordersList (oId, oDate, products:[], orderValue:, orderStatus, cId: }
+
+			customerList:{cId:, cName:,cContact:[address1
+								{
+								  houseNo:, buildingName:,locality,pinCode
+								}, address2:
+								{
+								  houseNo:, buildingName:,locality,pinCode
+								},
+								address3:{
+								  houseNo:, buildingName:,locality,pinCode
+								}]},
+					isCustomerActive:, customerWalletBalance:}
+
+			cartDetails:{cId:, products:[]}
+			authDetails:{cId, userName:,password:}
+
+	Phase 2: Consume webapi - Front end - Perform CRUD Operations 
+			1. user will login
+			2. view the products (login not needed)
+			3. Place order for product
+			4. view cart
+			
+
+	Start Phase 1 : design the database and tables
+
+
+		id cId cName addressNo houseNo building locality,pinCode
+
+			id is the primay key 
+
+
+		
+
+
+
+
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

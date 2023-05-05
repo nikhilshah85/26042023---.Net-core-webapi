@@ -1,0 +1,58 @@
+1. Create a new Database - bankingDB
+2. Add 2 tables to the same
+	a. branchInfo
+		brNo primary key
+		branchName varchar(20), (eg. Whitefield, Hi-tech, Kothrud, Salt-lake, T-Nagar)
+		branchLocation varchar(20), (citname)
+
+	add min 5 branches
+
+	b. accountsInfo
+		accNo int primary key
+		accName 	
+		accType (Savings, current or PF)
+		accBalance 
+		accBranch (foreign key to branchInfo table)
+		accIsActive
+
+	add min 15 records here
+3. create a new webapi application, bankingAPI
+4. Add EF Core to the application - 4 nuget packages
+		Microsoft.EntityframeworkCore.Tools
+		Microsoft.EntityframeworkCore.Design
+		Microsoft.EntityframeworkCore
+		Microsoft.EntityframeworkCore.SQLServer
+
+5. useing nuget package manager console, download the poco classes 
+	fire the command 
+
+6. create 2 controller for both tables, in the controller file, remove the DI code 
+	a. instantiate the DbContext class
+	b. comment the constructor
+
+7. build the app, run the app, test the app and cross check the results from and in datbase tables
+
+8. we now need to add 1 more table in database, transactionInfo - trNo, trFromAcc, trToAcc, trAmount
+	add 5 records to the same
+9. we need to have an api for the same in the same application
+	all u need to do it, from nuget package manager console, fire the same command as step 5 with 
+	-Force in the end, create a controller, remove DI, build, run and test the project
+	Work Done !! - good job
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
