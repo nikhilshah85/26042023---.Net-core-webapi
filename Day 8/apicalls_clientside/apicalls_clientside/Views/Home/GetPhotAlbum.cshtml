@@ -1,0 +1,35 @@
+﻿
+
+
+<script>
+    function showPhotos()
+    {
+        var url = "https://jsonplaceholder.typicode.com/photos";
+
+        fetch(url)
+        .then( dataFormat => dataFormat.json()) //data format
+        .then( data =>{
+        
+                for(var i=0;i<data.length;i++)
+                {
+                    $("table").append("<tr>" + 
+                        "<td>" + data[i].albumId + "</td>" +
+                        "<td>" + data[i].id + "</td>" +
+                        "<td>" + data[i].title + "</td>" +
+                        "<td> <img src=' " + data[i].albumId + " '/></td>" +
+                    
+                    + "</tr>")
+                }
+        
+        }) //display data
+        .catch(err =>{
+        
+        }) //display error
+    }
+</script>
+
+
+
+<button class="btn btn-danger" onclick="showPhotos()">Show Photos</button>
+
+<table class="table table-bordered"></table>

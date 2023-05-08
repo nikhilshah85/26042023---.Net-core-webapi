@@ -1,0 +1,12 @@
+Try - For logic development
+
+https://jsonplaceholder.typicode.com/users
+
+Make a call to - https://jsonplaceholder.typicode.com/users
+
+We need to display below details in a table
+
+	Name UserName email City Zipcode Lat Lon CompanyName CompanyCatchPhase
+
+	hing
+		result[i]address.city

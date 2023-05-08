@@ -1,0 +1,41 @@
+		Consume WebAPI - Consume RestFul Service - Call a webapi - read/write JSON data 
+
+	there are 2 ways to make a call
+
+	a. from Client Side to webapi - here client directly hits the api server
+		Client end framework - script
+			JQuery
+			Fetch API (mostly used - it is a part of standard) - built into every browser
+				Javascript based call
+			Angular, React, Node, Knockout, backbone etc...
+
+
+			--This is fastest, but less secure
+			--should not be used for scencetive data like, username/password, credit card etc.
+			--cannot be used for desktop application
+	
+	b. from server side - here client goes to server and server makes the api call
+			HttpClinet - it is a part of standard
+	
+				This is more secured, a little bit slower
+
+	-----------------------------------------------------------------------------------------------------
+
+		HATEOES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
