@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\apicall_cors_demo_MVC.props" />
+</Project>

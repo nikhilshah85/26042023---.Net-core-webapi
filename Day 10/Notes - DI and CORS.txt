@@ -1,0 +1,49 @@
+Today - WebAPI 
+
+	1. DI - Dependency Injection
+	2. CORS - for our webapi consumption / shareing out webapi over http 
+		Cross origin resource shareing - inhouse security feature
+--------------------------------------------------------------------------------------------------------------
+1. Create a new database - productDB
+	add a new table products, pid, pname, pcategory, pPrice, pIsIstock
+
+	add 3 records to the table
+2. Create a new WebAP APi, configure EF Core, add nuget packatges, download POCO classes, create controller
+	wait we will understand DI concept
+
+3. create a new MVC Application - add a new ActionResult in home controller 
+	public Iactionresult ShowProducts()
+	{ rerutn view()}
+4. in the view, make a fetch call to the get products URl, on a click of a button, update layout page
+5. run the app, check the error in console log
+
+		 -- add Nuget package : Microsoft.AspNet.WebAPI.Cors
+		 -- in program.cs
+				builder.Services.AddCors(policy =>
+				{
+				    policy.AddDefaultPolicy(defaultPolicy =>
+				    {
+				        defaultPolicy.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod();
+
+				    });
+				});
+		-- app.useCors()
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+		
+
+	
+		

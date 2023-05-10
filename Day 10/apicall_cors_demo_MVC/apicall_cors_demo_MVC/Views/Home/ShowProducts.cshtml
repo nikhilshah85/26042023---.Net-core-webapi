@@ -1,0 +1,28 @@
+﻿
+
+<script>
+    function showProducts() {
+
+        var url = "https://localhost:7068/api/Products";
+
+       
+
+        fetch(url).then(dataFormat => dataFormat.json())
+        .then( data => {
+            for(var i=0;i<data.length;i++)
+            {
+                $("table").append("<tr>" +
+                        "<td>" + data[i].pId + "</td>" +
+                        "<td>" + data[i].pName + "</td>" +                      
+                        "<td>" + data[i].pCategory + "</td>" +
+                        "<td>" + data[i].pPrice + "</td>" +
+                        "<td>" + data[i].pIsInStock + "</td>"
+                        + "</tr>" )
+            }
+        })
+        .catch(err =>{
+        })
+    }
+</script>
+<button class="btn btn-danger" onclick="showProducts()">Show Products</button>
+<table class="table table-bordered"></table>
