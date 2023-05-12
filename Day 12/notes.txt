@@ -1,0 +1,20 @@
+Create an MVC Application which will also have data to shared with clients in JSON format
+	this is called as WebAPI = RESTFul api - when you want to share data with clients / other teams
+	but do not wish to give access to database
+
+--------
+	we wish to create an API controller with EF
+
+
+-----------
+1. create a database - stockManagementDB
+2. Add below tables
+	clientInfo
+		clientid, clientName,fundsAvailable, clientEmail
+	stockInfo
+		stockId, stockName, stockPrice, stockQty
+	
+		Add 5 client
+		Add 10 stocks`1				D
+3. Creaet a new MVC APp, configure EF Core w
+

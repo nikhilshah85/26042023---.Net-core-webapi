@@ -1,0 +1,25 @@
+
+
+
+				WebAPI : Dependency Injection and CORS
+
+1. Create a new database flightManagement
+2. Add a table flightDetails
+	flightId, flightNo, flightSource, flightDestination, flightAvailableSeats, flightBookingOpen -->bit
+
+	add 8 records in the table
+
+3. add a table passengerInfo
+	passengerId, passengerName, passengerFlightId(FK), passengerSeatNo
+
+	add 4 records to the table
+
+4. create a webapi application, use EF core to generate poco classes for above db and tables
+
+5. create controllers for above 2 tables, use DI 
+
+6. creaet a new mvc application - make a call to above webapi
+	flightDetails - use JQuery
+	passengerDetails - use HttpClient - C#
+
+	configure cors
