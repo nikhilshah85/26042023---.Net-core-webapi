@@ -1,0 +1,32 @@
+1. Created a new application
+2. add a new Models file product.cs
+	add 5 properties
+3. add a new folder repository
+	add a new interface IProducts
+		add all the required methods
+
+	    List<Products> GetProducts();
+        Products GetProductById(int id);
+
+        string AddProduct(Products newProduct);
+        string DeleteProduct(int productId);
+
+        string EditProduct(Products changes);
+
+4. in the models class, add some folders like collection, sql server, oracle, excel, etc.
+
+5. in the respecticve folders, add the classes, add the data source and data - for sql 	server add ef by adding a table in the database
+
+6. add a new controller - ProductsController in controller folder, import the reporisitory folder
+
+	  IProduct _iproduct; //Dependency injection 
+
+7. write all the controller method to perform all the operations about the product
+
+8. We are useing DI, this in program.cs write the DI code
+
+
+
+
+
+	

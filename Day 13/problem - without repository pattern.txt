@@ -1,0 +1,48 @@
+
+
+
+
+1. Repository pattern 
+
+			This is a pattern for data source
+
+		1. in the inital phase - we do not have proper data design, structure, architecture etc..
+			thus we want to work dummy data
+
+			so we choose - in memory collection (List / array, etc...)
+
+		2. When data starts to grow, collection is not enough, we restart the server, we loose data 			etc..
+
+			Thus move to database - sqlServer Express - free one
+
+		3. when application progressed, users has grown, data grown, request ,response increased, 			sqlexpress needst to be replaced
+
+			Thus move to SQL Server - but need to purchase licnce - 6 months comes free, thus we 			went with and changed the code to use SQL Server - lot of efforts
+
+		4. after months management said, buy oracle licence this is less costly
+			Thus move to Oracle - weeks of efforts and time
+
+		5. Client says, why not change to NoSQL - mongoDB
+			Thus again a lot of efforts
+
+		6. We now have an Enterprise licence for Azure
+			please shift to Azure
+		7. AWS, Big data, hadoop, data lake etcccc.....
+			story goes on
+
+			Database is changeing, but more efforts are put in frontend / middleware to achive that change
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+		
