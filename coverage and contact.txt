@@ -1,0 +1,51 @@
+1. What is a WebAPI - REST API 
+	a repleace ment to WebService - which was very heavy and not suitable in todays slow mobile data world
+2. Create our first webapi appliation - Greetings and adding number
+3. Use Swagger to test the api
+4. CRUD operations with In Memory collection, List 
+	Add, update, delete, sort, filter, calculate etc...
+5. EF Core with SQL Server - CRUD operations here
+6. How to consume WebAPI in front end applications
+	Client Side
+		fetch api
+	server side
+		HttpClient 
+
+7. some useful api - marvel, nasa, jsonplaceholder etc... to test the api
+8. Consume our own API - Configure CORS
+9. Depndency injection 
+10. Repository pattern 
+
+	status code
+-------------------------------------------------------------------------------------------------------------
+						QnA
+
+
+
+		official: nikhil.shah@cognizant.com
+		Personal: nikhilshah.net@hotmail.com
+		linked In: nikhil.shah2008@gmail.com 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
